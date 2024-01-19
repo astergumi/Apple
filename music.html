@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple (RU) - Music</title>
+    <link rel="icon" href="img/ico.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	$('<style>'+
+		'.scrollTop{ display:none; z-index:9999; position:fixed;'+
+			'bottom:20px; left:95%; width: 33px; height: 33px;'+
+			'background:url(img/up.png) 0 0 no-repeat; }' +
+		'.scrollTop:{ background-position:0 -133px;}'
+	+'</style>').appendTo('body');
+	var
+	speed = 550,
+	$scrollTop = $('<a href="#" class="scrollTop">').appendTo('body');		
+	$scrollTop.click(function(e){
+		e.preventDefault();
+		$( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+	});
+
+	//появление
+	function show_scrollTop(){
+		( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+	}
+	$(window).scroll( function(){ show_scrollTop(); } );
+	show_scrollTop();
+});
+</script>
+    
+</head>
+<body>
+
+    <header>
+
+    <div class="navigationpanel">
+
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+  
+</div>
+        
+        <b>
+        <a href="">Mac</a>
+        <a href="">iPad</a>
+        <a href="">iPhone</a>
+        <a href="">Watch</a>
+        <a href="">TV</a>
+        <a href="">Music</a>
+        <a href="mailto:oliveralmedia@gmail.com">Поддержка</a>
+
+        </b>
+
+
+        <form>
+            <input type="text" placeholder="Искать здесь...">
+            <button type="submit"></button>
+
+          </form>
+          <div class="shop">
+<a href=""><img src="img/shop.png"></a>
+
+    </div>
+</div>
+   
+
+    </header>
+
+    <main>
+
+
+    </main>
+
+
+<footer>
+
+<div class="soсialllogo">
+
+<a href="https://vk.com/lennyfess" target="_blank"><img src="img/vk.png">
+    <a href="https://www.twitch.tv/lennyfess" target="_blank"><img src="img/twitch.png">
+        <a href="https://www.instagram.com/lennyfess/" target="_blank"><img src="img/inst.png">
+
+</div>
+
+
+
+
+
+    </footer>
+
+
+
+
+    
+</body>
+</html>
