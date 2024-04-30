@@ -1,1 +1,1 @@
-https://astergumi.github.io/Apple/
+https://osipovtwelve.github.io/Apple/
